@@ -1,0 +1,50 @@
+@page { 
+    size: auto;  margin: 0mm;  
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+	width: 95%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.rec-con{
+    width: 100%;
+    margin: 0;
+	border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.rec-con .title-con h6{
+    font-size: 14px;
+    margin: 40px 0 3px 0;
+}
+
+.rec-con .title-con p{
+    font-size: 12px;
+    margin: 0 auto 10px;
+}
+
+#dateTimeNow{
+    font-size: 12px;
+}
+
+.top-con{
+    margin-bottom: 10px;
+}
+
+.table-con{
+    width: 100%;
+}
+
+.table-con table{
+    width: 100%;
+}
+
+.table-con table tbody td, .bot-con{
+    font-size: 10px;
+}
+	
+

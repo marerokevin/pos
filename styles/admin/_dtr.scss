@@ -1,0 +1,133 @@
+#admin-dtr-con{
+    width: calc(100% - 80px);
+    height: 100%;
+    transform: translate(80px, 0);
+    overflow: hidden;
+
+    .top-con{
+        width: 100%;
+        height: 170px;
+        padding: 0 50px;
+
+        .title-con{
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            span{
+                font-size: 35px;
+                font-weight: 900;
+                line-height: 100px;
+            }
+    
+            .cur-date-con{
+                position: absolute;
+                top: 0;
+                right: 50px;
+    
+                span{
+                    line-height: 100px;
+                }
+            }
+        }
+
+        .control-con{
+            width: 100%;
+            height: 70px;
+            display: flex;
+
+            .date-con{
+                margin-top: 15px;
+                height: 40px;
+                width: 280px;
+
+                span{
+                    font-size: 20px;
+                    height: 30px;
+                    font-weight: 900;
+
+                    input{
+                        height: 40px;
+                        width: 200px;
+                        padding: 10px;
+                        border: 1px solid rgb(218, 218, 218);
+                        border-radius: 5px;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .btn-con{
+                margin-left: 0;
+
+                input{
+                    padding: 7px 30px;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+
+    .content-con{
+        width: 100%;
+        height: calc(100% - 190px);
+        padding: 20px 50px;
+
+        .table-con{
+            width: 100%;
+            height: calc(100% - 20px);
+            margin-top: 20px;
+            padding: 20px 0;
+            border-radius: 10px;
+            overflow-y: hidden;
+            box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.2);
+
+            table{
+                height: 100%;
+
+                thead{
+                    table-layout:fixed;
+                    display:table;
+                    width: 100%;
+                    border-bottom: 1px solid #cdd0df;
+
+                    tr{
+                        th{
+                            text-align: center;
+                            width: 120px;
+                            font-size: 20px;
+                            padding: 0 0 10px 0;
+
+                        }
+                    }
+                }
+                tbody{
+                    overflow-y: auto;
+                    overflow-x: hidden;
+                    display: block;
+                    height: calc(100% - 20px);
+                    width: 100%;
+
+                    tr{
+                        display: table;
+                        table-layout:fixed;
+                        width: 100%;
+
+                        td{
+                            text-align: center;
+                            font-size: 20px;
+                            padding: 10px 0;
+                            width: 120px;
+                            white-space: nowrap;
+                            overflow: hidden;
+
+                        }
+
+                        &:nth-child(even){
+                            background-color: #eaedfc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

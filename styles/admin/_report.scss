@@ -1,0 +1,136 @@
+#admin-report-con{
+    width: calc(100% - 80px);
+    height: 100%;
+    transform: translate(80px, 0);
+    overflow: hidden;
+
+    .inner-con{
+        width: 100%;
+        height: 100%;
+
+        .top-con{
+            width: 100%;
+            height: 80px;
+
+            .title-con{
+                width: 100%;
+                height: 100%;
+
+                .page-title{
+                    text-align: center;
+                    line-height: 80px;
+                }
+            }
+        }
+
+        .bottom-con{
+            width: 100%;
+            height: calc(100% - 200px);
+            margin-top: 100px;
+            display: flex;
+
+            .left-con{
+                width: 50%;
+                height: 100%;
+                text-align: center;
+
+                .stock-report{
+
+                    .button-con{
+                        a{
+                            padding: 10px 20px;
+                            font-weight: 900;
+                        }
+                    }
+                }
+            }
+
+            .right-con{
+                width: 50%;
+                height: 100%;
+                text-align: center;
+
+                .sales-report{
+
+                    .button-con{
+                        button{
+                            padding: 10px 20px;
+                            font-weight: 900;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-sales{
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+
+    .inner-modal{
+        width: 600px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        background-color: #ffffff;
+
+        .top-con{
+            text-align: center;
+            height: 60px;
+            margin-bottom: 10px;
+            
+            h2{
+                line-height: 60px;
+                font-weight: 900;
+            }
+        }
+        .content-con{
+            width: 100%;
+            padding: 0 10px;
+
+            form{
+                width: 100%;
+
+                .date-con{
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    span{
+                        font-weight: 900;
+                        margin: 10px;
+
+                        input{
+                            display: inline;
+                        }
+
+                        input[type = date]{
+                            width: 30%;
+                        }
+                    }
+                }
+
+                .submit-con{
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 20px;
+
+                    input, button{
+                        width: 150px;
+                        height: 40px;
+                        margin: 0 25px;
+                        font-weight: 900;
+                    }
+
+                }
+            }
+        }
+    }
+}

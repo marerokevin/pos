@@ -1,0 +1,176 @@
+#admin-dashboard-con{
+    width: calc(100% - 80px);
+    height: 100%;
+    transform: translate(80px, 0);
+    overflow: hidden;
+
+    .title-con{
+        width: 100%;
+        height: 100px;
+        position: relative;
+
+        span{
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 100px;
+            margin-left: 50px;
+        }
+
+        .date-con{
+            position: absolute;
+            top: 0;
+            right: 50px;
+        }
+    }
+
+    .overview-con{
+        width: 100%;
+        height: 200px;
+        padding: 25px 50px;
+
+        .sales-con{
+            height: 150px;
+            display: flex;
+
+            .each-con{
+                width: 21.2%;
+                margin-right: 5%;
+                border-radius: 20px;
+                padding-top: 20px;
+                // background-color: #4d5bf9;
+                color: #fff;
+                box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
+
+                &:nth-child(1){
+                    background: linear-gradient(90deg, #0037eb, #85bdf1);
+                }
+                &:nth-child(2){
+                    background: linear-gradient(90deg, #f68409, #effa6b);
+                }
+                &:nth-child(3){
+                    background: linear-gradient(90deg, #2b8d0c, #bbf67e);
+                }
+                &:nth-child(4){
+                    background: linear-gradient(90deg, #fe0243, #f881bb);
+                    margin-right: 0;
+                }
+
+                h1{
+                    text-align: center;
+                    font-size: 35px;
+                    font-weight: 900;
+                }
+
+                p{
+                    position: relative;
+                    top: 10px;
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+
+    .chart-con{
+        width: 100%;
+        height: calc(100% - 300px);
+        padding: 50px 50px;
+
+        #wholeMonth{
+            max-width: 100%;
+            max-height: 100%;
+            padding: 20px 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.4);
+        }
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1600px){
+    #admin-dashboard-con{
+    
+        .overview-con{
+    
+            .sales-con{
+    
+                .each-con{
+    
+                    h1{
+                        font-size: 29px;
+                    }
+    
+                    p{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1337px) and (max-width: 1440px){
+    #admin-dashboard-con{
+    
+        .overview-con{
+    
+            .sales-con{
+    
+                .each-con{
+    
+                    h1{
+                        font-size: 28px;
+                    }
+    
+                    p{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1366px){
+    #admin-dashboard-con{
+    
+        .overview-con{
+    
+            .sales-con{
+    
+                .each-con{
+    
+                    h1{
+                        font-size: 27px;
+                    }
+    
+                    p{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px){
+    #admin-dashboard-con{
+    
+        .overview-con{
+    
+            .sales-con{
+    
+                .each-con{
+    
+                    h1{
+                        font-size: 25px;
+                    }
+    
+                    p{
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

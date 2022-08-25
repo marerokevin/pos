@@ -1,0 +1,138 @@
+:root{
+    --theme: none;
+    --hover: none;
+}
+
+.nav-con{
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--theme);
+    transition: width 0.5s;
+    overflow: hidden;
+    z-index: 99;
+
+    &:hover{
+        width: 300px;
+    }
+
+    .logo-con{
+        height: 80px;
+        white-space: nowrap;
+        margin-bottom: 10px;
+        
+        img{
+            width: 50px;
+            margin-left: 15px;
+            transform: translate(0,-4px);
+        }
+
+        span{
+            display: inline-block;
+            height: 80px;
+            line-height: 80px;
+            font-size: 25px;
+            font-weight: 900;
+            margin-left: 10px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0,0,0,0.8);
+        }
+    }
+
+    ul{
+        width: 100%;
+        padding-left: 10px;
+        position: relative;
+
+        .disabled{
+            pointer-events: none;
+        }
+
+        .active{
+            background-color: #fff;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            z-index: 95;
+            
+            &::before{
+                content: '';
+                position: absolute;
+                top: -20px;
+                right: 0;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                background-color: var(--theme);
+                box-shadow: 10px 10px 0 #fff;
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: -20px;
+                right: 0;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                background-color: var(--theme);
+                box-shadow: 10px -10px 0 #fff;
+            }
+
+            a{
+                color: #333;
+
+                .icon{
+                    svg{
+                        fill: #333;
+                    }
+                }
+            }
+        }
+
+        li{
+            position: relative;
+            width: 100%;
+            list-style: none;
+            white-space: nowrap;
+
+            &:hover{
+                background-color: var(--hover);
+                border-radius: 10px;
+                z-index: 99;
+            }
+
+            a{
+                position: relative;
+                display: block;
+                width: 100%;
+                display: flex;
+                text-decoration: none;
+                color: #fff;
+
+                .icon{
+                    position: relative;
+                    display: block;
+                    height: 60px;
+                    text-align: center;
+                    // width: 60px;
+                    line-height: 55px;
+                    padding: 0 15px;
+
+                    svg{
+                        width: 30px;
+                        fill: #fff;
+                    }
+                }
+                .title{
+                    line-height: 60px;
+                    font-weight: 900;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}

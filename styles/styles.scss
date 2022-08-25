@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    // font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+@import 'login.scss';
+@import './cashier/home.scss';
+@import './cashier/inventory.scss';
+@import './cashier/dtr.scss';
+@import './admin/nav.scss';
+@import './admin/dashboard.scss';
+@import './admin/inventory.scss';
+@import './admin/transaction.scss';
+@import './admin/category.scss';
+@import './admin/dtr.scss';
+@import './admin/settings.scss';
+@import './admin/report.scss';
